@@ -1,0 +1,2 @@
+# color.rs
+Coloring it
