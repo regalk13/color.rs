@@ -6,10 +6,10 @@ struct Color {
 
 
 impl Color {
-    fn new(name: &str, a: i32, b: i32) -> Self {
+    fn new(name: &str, code: i32) -> Self {
         return Self {
             name: name.to_string(),
-            code: (a * 16 + b).to_string(),
+            code: code.to_string(),
         }
     }
 }
@@ -25,6 +25,6 @@ impl Colored {
 }
 
 fn main() {
-    let color_red = Color::new("red", 13, 16);
+    let color_red = Color::new("red", 23);
     println!("{}, Using the color: {} ", Colored::text_to_color("Regius", color_red.clone()), color_red.name); 
 }
